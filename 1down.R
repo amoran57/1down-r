@@ -11,4 +11,8 @@ for (i in 1:times) {
   iterations <- c(iterations, x)
 }
 
+pdf("plot.pdf")
 hist(iterations)
+dev.off()
+
+mean(iterations)
